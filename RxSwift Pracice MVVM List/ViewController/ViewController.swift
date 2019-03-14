@@ -12,14 +12,11 @@ import RxAlamofire
 
 class ViewController: UIViewController {
     
-    let stringURL = "https://jsonplaceholder.typicode.com"
-    
-    let disposeBag = DisposeBag()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        ApiManager().postsData
+            .subscribe({  print($0.element![0].title) })
     }
 }
 

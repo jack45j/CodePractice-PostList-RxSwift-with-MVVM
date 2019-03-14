@@ -12,6 +12,8 @@
 		93D0F07E22377F960011E029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D0F07C22377F960011E029 /* Main.storyboard */; };
 		93D0F08022377F980011E029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D0F07F22377F980011E029 /* Assets.xcassets */; };
 		93D0F08322377F980011E029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D0F08122377F980011E029 /* LaunchScreen.storyboard */; };
+		93E291732238E81D005110F7 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E291722238E81D005110F7 /* ApiManager.swift */; };
+		93E291752238E857005110F7 /* PostsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E291742238E857005110F7 /* PostsDataModel.swift */; };
 		95FAA0DDC0CD23ABEE688876 /* Pods_RxSwift_Pracice_MVVM_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD60B465C51696785ADDAA0 /* Pods_RxSwift_Pracice_MVVM_List.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		93D0F07F22377F980011E029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93D0F08222377F980011E029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93D0F08422377F980011E029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E291722238E81D005110F7 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		93E291742238E857005110F7 /* PostsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDataModel.swift; sourceTree = "<group>"; };
 		FBD60B465C51696785ADDAA0 /* Pods_RxSwift_Pracice_MVVM_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Pracice_MVVM_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,6 +44,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		934F22D6223A2197007F9473 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				93D0F07822377F950011E029 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		934F22D7223A21A5007F9473 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93D0F07A22377F950011E029 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		934F22D8223A21B0007F9473 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				93E291722238E81D005110F7 /* ApiManager.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		934F22D9223A21B7007F9473 /* Data Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				93E291742238E857005110F7 /* PostsDataModel.swift */,
+			);
+			path = "Data Utilities";
+			sourceTree = "<group>";
+		};
+		934F22DA223A21CD007F9473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93D0F07C22377F960011E029 /* Main.storyboard */,
+				93D0F08122377F980011E029 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		934F22DB223A21D5007F9473 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				93D0F08422377F980011E029 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		93D0F06C22377F950011E029 = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +114,13 @@
 		93D0F07722377F950011E029 /* RxSwift Pracice MVVM List */ = {
 			isa = PBXGroup;
 			children = (
-				93D0F07822377F950011E029 /* AppDelegate.swift */,
-				93D0F07A22377F950011E029 /* ViewController.swift */,
-				93D0F07C22377F960011E029 /* Main.storyboard */,
+				934F22D6223A2197007F9473 /* AppDelegate */,
+				934F22D7223A21A5007F9473 /* ViewController */,
+				934F22DA223A21CD007F9473 /* View */,
+				934F22D8223A21B0007F9473 /* Api */,
+				934F22D9223A21B7007F9473 /* Data Utilities */,
+				934F22DB223A21D5007F9473 /* Supporting files */,
 				93D0F07F22377F980011E029 /* Assets.xcassets */,
-				93D0F08122377F980011E029 /* LaunchScreen.storyboard */,
-				93D0F08422377F980011E029 /* Info.plist */,
 			);
 			path = "RxSwift Pracice MVVM List";
 			sourceTree = "<group>";
@@ -193,6 +247,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -203,6 +258,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -217,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93D0F07B22377F950011E029 /* ViewController.swift in Sources */,
+				93E291732238E81D005110F7 /* ApiManager.swift in Sources */,
 				93D0F07922377F950011E029 /* AppDelegate.swift in Sources */,
+				93E291752238E857005110F7 /* PostsDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
