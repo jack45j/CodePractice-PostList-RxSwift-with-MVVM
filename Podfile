@@ -10,4 +10,5 @@ target 'RxSwift Pracice MVVM List' do
   pod 'RxCocoa',    '~> 4.0'
   pod 'RxAlamofire'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'SnapKit', '~> 4.0.0'
 end
