@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         tableView = UITableView(frame: self.view.frame, style: .plain)
         configure(tableView: tableView!)
+        
         tableView!.rx.setDelegate(self)
             .disposed(by: disposeBag)
         
@@ -28,8 +29,7 @@ class ViewController: UIViewController {
         ApiManager().postsData
             .bind(to: tableView!.rx.items) { (tableView, row, element) in
                 let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: IndexPath(row: row, section: 0)) as! DetailTableViewCell
-                cell.postData = Variable(element)
-                cell.updateUI()
+                cell.configure(viewModel: DetailCellViewModel(post: element))
                 return cell
             }
             .disposed(by: disposeBag)
@@ -42,12 +42,12 @@ extension ViewController: UIScrollViewDelegate, UITableViewDelegate {
         scrollView.contentSize.width = 0
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 8
-    }
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 8
+//    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 222+16
+        return 222+12
     }
 }
 

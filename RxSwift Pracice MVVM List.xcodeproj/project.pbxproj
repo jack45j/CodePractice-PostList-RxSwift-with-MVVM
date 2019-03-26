@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931FCA4D2248BF5B00749EB2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA4C2248BF5B00749EB2 /* CardView.swift */; };
 		934F22DD223A4D0C007F9473 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F22DC223A4D0C007F9473 /* DetailTableViewCell.swift */; };
+		93956E7F22432B11004AF3D9 /* DetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93956E7E22432B11004AF3D9 /* DetailCellViewModel.swift */; };
 		93D0F07922377F950011E029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0F07822377F950011E029 /* AppDelegate.swift */; };
 		93D0F07B22377F950011E029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0F07A22377F950011E029 /* ViewController.swift */; };
 		93D0F07E22377F960011E029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D0F07C22377F960011E029 /* Main.storyboard */; };
@@ -21,7 +23,9 @@
 /* Begin PBXFileReference section */
 		71752BC5BF26562829E2AB63 /* Pods-RxSwift Pracice MVVM List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Pracice MVVM List.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List.release.xcconfig"; sourceTree = "<group>"; };
 		882EEAF4DD8EDDD58C170828 /* Pods-RxSwift Pracice MVVM List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Pracice MVVM List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List.debug.xcconfig"; sourceTree = "<group>"; };
+		931FCA4C2248BF5B00749EB2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		934F22DC223A4D0C007F9473 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		93956E7E22432B11004AF3D9 /* DetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellViewModel.swift; sourceTree = "<group>"; };
 		93D0F07522377F950011E029 /* RxSwift Pracice MVVM List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift Pracice MVVM List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D0F07822377F950011E029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93D0F07A22377F950011E029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,12 +74,12 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
-		934F22D9223A21B7007F9473 /* Data Utilities */ = {
+		934F22D9223A21B7007F9473 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
 				93E291742238E857005110F7 /* PostsDataModel.swift */,
 			);
-			path = "Data Utilities";
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 		934F22DA223A21CD007F9473 /* View */ = {
@@ -84,6 +88,8 @@
 				93D0F07C22377F960011E029 /* Main.storyboard */,
 				93D0F08122377F980011E029 /* LaunchScreen.storyboard */,
 				934F22DC223A4D0C007F9473 /* DetailTableViewCell.swift */,
+				93956E7E22432B11004AF3D9 /* DetailCellViewModel.swift */,
+				931FCA4C2248BF5B00749EB2 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,7 +127,7 @@
 				934F22D7223A21A5007F9473 /* ViewController */,
 				934F22DA223A21CD007F9473 /* View */,
 				934F22D8223A21B0007F9473 /* Api */,
-				934F22D9223A21B7007F9473 /* Data Utilities */,
+				934F22D9223A21B7007F9473 /* Data Model */,
 				934F22DB223A21D5007F9473 /* Supporting files */,
 				93D0F07F22377F980011E029 /* Assets.xcassets */,
 			);
@@ -277,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931FCA4D2248BF5B00749EB2 /* CardView.swift in Sources */,
 				93D0F07B22377F950011E029 /* ViewController.swift in Sources */,
+				93956E7F22432B11004AF3D9 /* DetailCellViewModel.swift in Sources */,
 				93E291732238E81D005110F7 /* ApiManager.swift in Sources */,
 				93D0F07922377F950011E029 /* AppDelegate.swift in Sources */,
 				934F22DD223A4D0C007F9473 /* DetailTableViewCell.swift in Sources */,
