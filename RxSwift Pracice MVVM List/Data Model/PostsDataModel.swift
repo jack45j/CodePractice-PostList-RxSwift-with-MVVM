@@ -15,7 +15,6 @@ struct Post: Codable {
     let body: String?
     
     enum CodingKeys: String, CodingKey {
-        
         case userId
         case id
         case title

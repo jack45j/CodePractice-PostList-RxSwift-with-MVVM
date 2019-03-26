@@ -19,22 +19,25 @@ class CardBodyView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initCardHeaderView()
+        initCardBodyView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        initCardHeaderView()
+        initCardBodyView()
     }
     
-    func initCardHeaderView() {
+    func initCardBodyView() {
+        
+        CardBodyViewLog("Start init view")
         
         postTitleLabel.numberOfLines = 1
         
         let style = NSMutableParagraphStyle()
         style.lineSpacing = 8
         let attributes = [NSAttributedString.Key.paragraphStyle: style]
-        postBodyLabel.attributedText = NSAttributedString(string: "\(String(describing: postBodyLabel.text))", attributes: attributes)
+        postBodyLabel.attributedText = NSAttributedString(
+            string: "\(String(describing: postBodyLabel.text))", attributes: attributes)
         postBodyLabel.numberOfLines = 0
         postBodyLabel.textAlignment = .justified
         postBodyLabel.font = UIFont.systemFont(ofSize: 13)
@@ -42,31 +45,40 @@ class CardBodyView: UIView {
     }
     
     override func layoutSubviews() {
+        
+        CardBodyViewLog("Start layoutSubviews")
+        
         let cardBodyView = UIStackView(arrangedSubviews: [postTitleContainerView, postBodyContainerView])
         cardBodyView.axis = .vertical
         cardBodyView.spacing = 0
         self.addSubview(cardBodyView)
+        
+        CardBodyViewLog("Making cardBodyView constraints")
         cardBodyView.snp.makeConstraints { (constraint) in
             constraint.top.bottom.equalTo(0)
             constraint.left.equalTo(12)
             constraint.right.equalTo(-12)
         }
         
+        CardBodyViewLog("Making postTitleContainerView constraints")
         postTitleContainerView.addSubview(postTitleLabel)
         postTitleContainerView.snp.makeConstraints { (constraint) in
             constraint.left.right.equalTo(0)
             constraint.height.equalTo(40)
         }
         
+        CardBodyViewLog("Making postTitleLabel constraints")
         postTitleLabel.snp.makeConstraints { (constraint) in
             constraint.top.bottom.left.right.equalTo(0)
         }
         
+        CardBodyViewLog("Making postBodyContainerView constraints")
         postBodyContainerView.addSubview(postBodyLabel)
         postBodyContainerView.snp.makeConstraints { (constraint) in
             constraint.left.right.bottom.equalTo(0)
         }
         
+        CardBodyViewLog("Making postBodyLabel constraints")
         postBodyLabel.snp.makeConstraints { (constraint) in
             constraint.top.left.right.equalTo(0)
             constraint.bottom.equalTo(-14)

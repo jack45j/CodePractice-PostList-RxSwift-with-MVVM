@@ -22,12 +22,11 @@ class DetailTableViewCell: UITableViewCell {
         
     }
     
-    
     func configure(viewModel: DetailCellViewModel) {
         if cardView == nil {
             cardView = CardView()
             cardView.cardHeaderView.titleLabel.text = viewModel.title
-            cardView.cardHeaderView.dateTitleLabel.text = "12 Nov 2019"
+            cardView.cardHeaderView.dateTitleLabel.text = viewModel.timestamp
             cardView.cardBodyView.postTitleLabel.text = viewModel.title
             cardView.cardBodyView.postBodyLabel.text = viewModel.body
             self.addSubview(cardView)
@@ -40,9 +39,4 @@ class DetailTableViewCell: UITableViewCell {
             }
         }
     }
-}
-
-
-extension DetailTableViewCell {
-    
 }

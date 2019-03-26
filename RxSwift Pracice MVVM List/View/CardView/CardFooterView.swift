@@ -14,22 +14,30 @@ class CardFooterView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initCardHeaderView()
+        initCardFooterView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        initCardHeaderView()
+        initCardFooterView()
     }
     
-    func initCardHeaderView() {
+    func initCardFooterView() {
         
+        CardFooterViewLog("Start init view")
+        
+        #warning("Do some configuration.")
     }
     
     override func layoutSubviews() {
+        
+        CardFooterViewLog("Start layoutSubviews")
+        
         let cardFooterView = UIStackView()
         cardFooterView.axis = .horizontal
         self.addSubview(cardFooterView)
+        
+        CardFooterViewLog("Making cardFooterView constraints")
         cardFooterView.snp.makeConstraints { (constraint) in
             constraint.top.bottom.equalTo(0)
             constraint.left.equalTo(12)
@@ -37,12 +45,7 @@ class CardFooterView: UIView {
             constraint.height.equalTo(44)
         }
         
-        let view = UIView()
-        cardFooterView.addSubview(view)
-        view.snp.makeConstraints { (constraint) in
-            constraint.top.bottom.left.right.equalTo(0)
-        }
-        
+        CardFooterViewLog("Making footerSeparator constraints")
         let footerSeparator = UIView()
         cardFooterView.addSubview(footerSeparator)
         footerSeparator.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
@@ -51,5 +54,12 @@ class CardFooterView: UIView {
             constraint.centerY.equalTo(cardFooterView.snp.top).offset(-1)
             constraint.height.equalTo(1)
         }
+    }
+}
+
+private struct CardFooterViewLog {
+    @discardableResult
+    init(_ message: String) {
+        CardViewLog(message, view: "CardFooterView")
     }
 }

@@ -88,8 +88,8 @@
 		934F22D7223A21A5007F9473 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				931FCA4E2249ED1A00749EB2 /* MainListViewController */,
 				931FCA4F2249EDB400749EB2 /* MainNavController.swift */,
+				931FCA4E2249ED1A00749EB2 /* MainListViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";

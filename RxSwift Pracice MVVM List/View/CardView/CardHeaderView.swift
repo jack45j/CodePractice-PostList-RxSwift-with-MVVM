@@ -47,7 +47,6 @@ class CardHeaderView: UIView {
     }
     
     override func layoutSubviews() {
-        
         CardHeaderViewLog("Start layoutSubviews")
         
         let cardHeaderView = UIStackView(arrangedSubviews: [thumbnailImageContainerView, titleContainerView, dateContainerView])

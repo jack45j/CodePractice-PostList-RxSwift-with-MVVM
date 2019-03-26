@@ -29,7 +29,7 @@ class ApiManager {
     var postsData: Observable<[Post]> = Observable.create { (observer) -> Disposable in
         let disposeBag = DisposeBag()
         
-        RxAlamofire.requestJSON(URLRequest(url: Address.posts.url))
+        _ = RxAlamofire.requestJSON(URLRequest(url: Address.posts.url))
             .subscribe(
                 onNext: { (response, json) in
                     guard
