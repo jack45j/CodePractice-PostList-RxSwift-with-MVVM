@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxAlamofire
 
-class ViewController: UIViewController {
+class MainListViewController: UIViewController {
     
     var tableView: UITableView?
     
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Articles"
         
         tableView = UITableView(frame: self.view.frame, style: .plain)
         configure(tableView: tableView!)
@@ -36,27 +37,23 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UIScrollViewDelegate, UITableViewDelegate {
+extension MainListViewController: UIScrollViewDelegate, UITableViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         scrollView.contentSize.width = 0
     }
-    
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 8
-//    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 222+12
     }
 }
 
-extension ViewController {
+extension MainListViewController {
     
     func configure(tableView: UITableView) {
         tableView.allowsSelection = false
         tableView.separatorStyle = .none
-        tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 7, left: 0, bottom: 6, right: 0)
         tableView.showsHorizontalScrollIndicator = false
         tableView.register(DetailTableViewCell.self, forCellReuseIdentifier: "Cell")
         self.view.addSubview(tableView)

@@ -38,7 +38,8 @@ class DetailTableViewCell: UITableViewCell {
             cardView.snp.makeConstraints { (constraint) in
                 constraint.left.equalTo(16)
                 constraint.top.equalTo(6)
-                constraint.bottom.equalTo(-6)
+//                constraint.bottom.equalTo(-6)
+                constraint.height.equalTo(222)
                 constraint.right.equalTo(-16)
             }
         }

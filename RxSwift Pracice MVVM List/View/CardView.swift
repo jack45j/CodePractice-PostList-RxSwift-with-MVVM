@@ -27,16 +27,17 @@ class CardView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        updateUI()
+        layoutIfNeeded()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        updateUI()
+        layoutIfNeeded()
     }
     
     override func layoutSubviews() {
         configureCardView()
+        configureHeaderView()
         
         titleLabel.numberOfLines = 1
         
@@ -54,8 +55,11 @@ class CardView: UIView {
         self.backgroundColor = UIColor.white
         self.layer.cornerRadius = 8
         
-        
         /// add custom shadows to card view
+        applyShadows()
+    }
+    
+    func applyShadows() {
         let firstShadow = CALayer()
         firstShadow.frame = self.bounds
         firstShadow.cornerRadius = 8
@@ -86,10 +90,6 @@ class CardView: UIView {
         self.layer.insertSublayer(firstShadow, at: 0)
         self.layer.insertSublayer(secondShadow, below: firstShadow)
         self.layer.insertSublayer(thirdShadow, below: secondShadow)
-    }
-    
-    func updateUI() {
-        configureHeaderView()
     }
     
     func configureHeaderView() {
