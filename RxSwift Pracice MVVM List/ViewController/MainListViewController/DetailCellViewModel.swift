@@ -10,10 +10,12 @@ import Foundation
 
 struct DetailCellViewModel {
     let title: String
+    let body: String
 }
 
 extension DetailCellViewModel {
     init(post: Post) {
         title = post.title!
+        body = post.body!
     }
 }
