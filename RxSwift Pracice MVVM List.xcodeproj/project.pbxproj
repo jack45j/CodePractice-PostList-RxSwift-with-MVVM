@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931C4A71224C622500DE760A /* SwiftSlackBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A70224C622500DE760A /* SwiftSlackBot.swift */; };
 		931FCA4D2248BF5B00749EB2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA4C2248BF5B00749EB2 /* CardView.swift */; };
 		931FCA502249EDB400749EB2 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA4F2249EDB400749EB2 /* MainNavController.swift */; };
 		931FCA53224A14F900749EB2 /* CardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA52224A14F900749EB2 /* CardHeaderView.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		71752BC5BF26562829E2AB63 /* Pods-RxSwift Pracice MVVM List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Pracice MVVM List.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List.release.xcconfig"; sourceTree = "<group>"; };
 		882EEAF4DD8EDDD58C170828 /* Pods-RxSwift Pracice MVVM List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Pracice MVVM List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List.debug.xcconfig"; sourceTree = "<group>"; };
+		931C4A70224C622500DE760A /* SwiftSlackBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlackBot.swift; sourceTree = "<group>"; };
 		931FCA4C2248BF5B00749EB2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		931FCA4F2249EDB400749EB2 /* MainNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
 		931FCA52224A14F900749EB2 /* CardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHeaderView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				934F22D9223A21B7007F9473 /* Data Model */,
 				934F22DB223A21D5007F9473 /* Supporting files */,
 				93D0F07F22377F980011E029 /* Assets.xcassets */,
+				931C4A70224C622500DE760A /* SwiftSlackBot.swift */,
 			);
 			path = "RxSwift Pracice MVVM List";
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				93D0F07B22377F950011E029 /* MainListViewController.swift in Sources */,
 				93956E7F22432B11004AF3D9 /* DetailCellViewModel.swift in Sources */,
 				93E291732238E81D005110F7 /* ApiManager.swift in Sources */,
+				931C4A71224C622500DE760A /* SwiftSlackBot.swift in Sources */,
 				931FCA53224A14F900749EB2 /* CardHeaderView.swift in Sources */,
 				93D0F07922377F950011E029 /* AppDelegate.swift in Sources */,
 				934F22DD223A4D0C007F9473 /* DetailTableViewCell.swift in Sources */,

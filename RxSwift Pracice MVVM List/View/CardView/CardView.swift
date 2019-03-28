@@ -39,7 +39,8 @@ class CardView: UIView {
         innerView.spacing = 0
         self.addSubview(innerView)
         innerView.snp.makeConstraints { (constraint) in
-            constraint.top.bottom.left.right.equalTo(0)
+            constraint.top.left.equalTo(12)
+            constraint.bottom.right.equalTo(-12)
         }
         
         /// add custom shadows to card view
@@ -85,7 +86,11 @@ struct CardViewLog {
     init(_ message: String, view: String) {
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             if appDelegate.enableDebugLog {
-                NSLog("[CardView(\(view)] \(message)")
+                
+                let slackBot = Slackbot(url: "https://hooks.slack.com/services/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")
+                
+//                slackBot.sendMessage(message: "[CardView (\(view))] \(message)")
+                NSLog("[CardView (\(view))] \(message)")
             }
         }
     }

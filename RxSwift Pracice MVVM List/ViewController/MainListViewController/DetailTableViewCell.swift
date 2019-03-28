@@ -29,6 +29,7 @@ class DetailTableViewCell: UITableViewCell {
             cardView.cardHeaderView.dateTitleLabel.text = viewModel.timestamp
             cardView.cardBodyView.postTitleLabel.text = viewModel.title
             cardView.cardBodyView.postBodyLabel.text = viewModel.body
+            cardView.cardFooterView.commentersImage = viewModel.commentersImage
             self.addSubview(cardView)
             
             cardView.snp.makeConstraints { (constraint) in

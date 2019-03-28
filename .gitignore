@@ -36,6 +36,7 @@ xcuserdata/
 *.xcscmblueprint
 .DS_Store
 .DS_Store?
+._*
 
 ## Obj-C/Swift specific
 *.hmap

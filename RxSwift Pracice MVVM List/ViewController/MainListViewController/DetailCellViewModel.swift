@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 struct DetailCellViewModel {
     let title: String
     let body: String
     let timestamp: String
+    var commentersImage: [UIImage]
 }
 
 extension DetailCellViewModel {
@@ -23,6 +25,12 @@ extension DetailCellViewModel {
                 generateRandomDate(daysBack: Int(arc4random_uniform(100)))
             )
         )
+        commentersImage = [UIImage]()
+        for _ in 0...2 {
+            if let image = UIImage(named: "myKitty") {
+                commentersImage.append(image)
+            }
+        }
     }
 }
 
