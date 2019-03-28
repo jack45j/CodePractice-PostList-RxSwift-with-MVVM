@@ -22,11 +22,10 @@ class CardHeaderView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        initCardHeaderView()
+        fatalError("init(coder:) has not been implemented")
     }
     
     func initCardHeaderView() {
-        
         CardHeaderViewLog("Start init view")
         
         titleLabel.numberOfLines = 1
@@ -91,7 +90,7 @@ class CardHeaderView: UIView {
 
 private struct CardHeaderViewLog {
     @discardableResult
-    init(_ message: String) {
-        CardViewLog(message, view: "CardHeaderView")
+    init(_ message: String, sendToSlack: Bool = false) {
+        CardViewLog(message, view: "CardHeaderView", sendToSlack: sendToSlack)
     }
 }

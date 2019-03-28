@@ -9,10 +9,10 @@
 import Foundation
 
 struct Post: Codable {
-    let userId: Int?
-    let id: Int?
-    let title: String?
-    let body: String?
+    let userId: Int
+    let id: Int
+    let title: String
+    let body: String
     
     enum CodingKeys: String, CodingKey {
         case userId
@@ -23,9 +23,9 @@ struct Post: Codable {
     
     init(from decoder: Decoder) throws {
         let posts = try decoder.container(keyedBy: CodingKeys.self)
-        userId = try posts.decodeIfPresent(Int.self, forKey: .userId)
-        id = try posts.decodeIfPresent(Int.self, forKey: .id)
-        title = try posts.decodeIfPresent(String.self, forKey: .title)
-        body = try posts.decodeIfPresent(String.self, forKey: .body)
+        userId = try posts.decodeIfPresent(Int.self, forKey: .userId)!
+        id = try posts.decodeIfPresent(Int.self, forKey: .id)!
+        title = try posts.decodeIfPresent(String.self, forKey: .title)!
+        body = try posts.decodeIfPresent(String.self, forKey: .body)!
     }
 }

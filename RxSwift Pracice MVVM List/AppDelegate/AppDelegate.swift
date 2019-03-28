@@ -19,10 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootNavController = MainNavController(rootViewController: MainListViewController())
-        window!.rootViewController = rootNavController
-        window!.makeKeyAndVisible()
         
+        if let window = window {
+            let viewModel = PostsViewModel(dependencies: PostsViewModel.Dependencies(networkingApi: NetworkingApi()))
+            let rootNavController = MainNavController(rootViewController: MainListViewController(viewModel: viewModel))
+            window.rootViewController = rootNavController
+            window.makeKeyAndVisible()
+        }
+
         return true
     }
 

@@ -24,7 +24,7 @@ class CardFooterView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        initCardFooterView()
+        fatalError("init(coder:) has not been implemented")
     }
     
     func initCardFooterView() {
@@ -34,7 +34,7 @@ class CardFooterView: UIView {
         commenterStackView.spacing = -10
         commenterStackView.axis = .horizontal
         
-        /// will add arranged subview according to commentersImage count and limit mac amount to 3 images.
+        #warning("will add arranged subview according to commentersImage count and limit mac amount to 3 images.")
         for _ in 0...2 {
             commenterStackView.addArrangedSubview(UIImageView())
         }
@@ -76,7 +76,7 @@ class CardFooterView: UIView {
             view.clipsToBounds = true
             view.layer.cornerRadius = view.frame.width/2
             
-            // should add border "ouside" of view
+            #warning("should add border \"ouside\" of view")
             // still looking for some way to achieve it.
             // maybe will try to add a CALayer below it.
             view.layer.borderColor = UIColor.white.cgColor
@@ -116,7 +116,7 @@ class CardFooterView: UIView {
 
 private struct CardFooterViewLog {
     @discardableResult
-    init(_ message: String) {
+    init(_ message: String, sendToSlack: Bool = false) {
         CardViewLog(message, view: "CardFooterView")
     }
 }

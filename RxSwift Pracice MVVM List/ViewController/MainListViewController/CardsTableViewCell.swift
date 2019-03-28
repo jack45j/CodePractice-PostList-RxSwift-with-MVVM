@@ -11,9 +11,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class DetailTableViewCell: UITableViewCell {
-    
-    var postData: PublishSubject<Post>?
+class CardsTableViewCell: UITableViewCell {
     
     var cardView: CardView!
     
@@ -22,14 +20,14 @@ class DetailTableViewCell: UITableViewCell {
         
     }
     
-    func configure(viewModel: DetailCellViewModel) {
+    func configure(viewModel: PostViewModel) {
         if cardView == nil {
             cardView = CardView()
             cardView.cardHeaderView.titleLabel.text = viewModel.title
             cardView.cardHeaderView.dateTitleLabel.text = viewModel.timestamp
             cardView.cardBodyView.postTitleLabel.text = viewModel.title
             cardView.cardBodyView.postBodyLabel.text = viewModel.body
-            cardView.cardFooterView.commentersImage = viewModel.commentersImage
+            
             self.addSubview(cardView)
             
             cardView.snp.makeConstraints { (constraint) in

@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		931C4A71224C622500DE760A /* SwiftSlackBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A70224C622500DE760A /* SwiftSlackBot.swift */; };
+		931C4A74224CAABC00DE760A /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A73224CAABC00DE760A /* ViewModelType.swift */; };
+		931C4A76224CC37900DE760A /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A75224CC37900DE760A /* UIViewController+Rx.swift */; };
 		931FCA4D2248BF5B00749EB2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA4C2248BF5B00749EB2 /* CardView.swift */; };
 		931FCA502249EDB400749EB2 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA4F2249EDB400749EB2 /* MainNavController.swift */; };
 		931FCA53224A14F900749EB2 /* CardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA52224A14F900749EB2 /* CardHeaderView.swift */; };
 		931FCA55224A25EA00749EB2 /* CardBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA54224A25EA00749EB2 /* CardBodyView.swift */; };
 		931FCA57224A29A600749EB2 /* CardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA56224A29A600749EB2 /* CardFooterView.swift */; };
-		934F22DD223A4D0C007F9473 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F22DC223A4D0C007F9473 /* DetailTableViewCell.swift */; };
-		93956E7F22432B11004AF3D9 /* DetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93956E7E22432B11004AF3D9 /* DetailCellViewModel.swift */; };
+		934F22DD223A4D0C007F9473 /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */; };
+		93956E7F22432B11004AF3D9 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93956E7E22432B11004AF3D9 /* PostsViewModel.swift */; };
 		93D0F07922377F950011E029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0F07822377F950011E029 /* AppDelegate.swift */; };
 		93D0F07B22377F950011E029 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0F07A22377F950011E029 /* MainListViewController.swift */; };
 		93D0F08022377F980011E029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D0F07F22377F980011E029 /* Assets.xcassets */; };
 		93D0F08322377F980011E029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D0F08122377F980011E029 /* LaunchScreen.storyboard */; };
-		93E291732238E81D005110F7 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E291722238E81D005110F7 /* ApiManager.swift */; };
-		93E291752238E857005110F7 /* PostsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E291742238E857005110F7 /* PostsDataModel.swift */; };
+		93E291732238E81D005110F7 /* NetworkingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E291722238E81D005110F7 /* NetworkingApi.swift */; };
+		93E291752238E857005110F7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E291742238E857005110F7 /* Post.swift */; };
 		95FAA0DDC0CD23ABEE688876 /* Pods_RxSwift_Pracice_MVVM_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD60B465C51696785ADDAA0 /* Pods_RxSwift_Pracice_MVVM_List.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,21 +30,23 @@
 		71752BC5BF26562829E2AB63 /* Pods-RxSwift Pracice MVVM List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Pracice MVVM List.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List.release.xcconfig"; sourceTree = "<group>"; };
 		882EEAF4DD8EDDD58C170828 /* Pods-RxSwift Pracice MVVM List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Pracice MVVM List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List.debug.xcconfig"; sourceTree = "<group>"; };
 		931C4A70224C622500DE760A /* SwiftSlackBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlackBot.swift; sourceTree = "<group>"; };
+		931C4A73224CAABC00DE760A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		931C4A75224CC37900DE760A /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		931FCA4C2248BF5B00749EB2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		931FCA4F2249EDB400749EB2 /* MainNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
 		931FCA52224A14F900749EB2 /* CardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHeaderView.swift; sourceTree = "<group>"; };
 		931FCA54224A25EA00749EB2 /* CardBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBodyView.swift; sourceTree = "<group>"; };
 		931FCA56224A29A600749EB2 /* CardFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFooterView.swift; sourceTree = "<group>"; };
-		934F22DC223A4D0C007F9473 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
-		93956E7E22432B11004AF3D9 /* DetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellViewModel.swift; sourceTree = "<group>"; };
+		934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
+		93956E7E22432B11004AF3D9 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		93D0F07522377F950011E029 /* RxSwift Pracice MVVM List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift Pracice MVVM List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D0F07822377F950011E029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93D0F07A22377F950011E029 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		93D0F07F22377F980011E029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93D0F08222377F980011E029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93D0F08422377F980011E029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93E291722238E81D005110F7 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
-		93E291742238E857005110F7 /* PostsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDataModel.swift; sourceTree = "<group>"; };
+		93E291722238E81D005110F7 /* NetworkingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApi.swift; sourceTree = "<group>"; };
+		93E291742238E857005110F7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FBD60B465C51696785ADDAA0 /* Pods_RxSwift_Pracice_MVVM_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Pracice_MVVM_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,12 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931C4A72224CAAA700DE760A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				931C4A70224C622500DE760A /* SwiftSlackBot.swift */,
+				931C4A73224CAABC00DE760A /* ViewModelType.swift */,
+				931C4A75224CC37900DE760A /* UIViewController+Rx.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		931FCA4E2249ED1A00749EB2 /* MainListViewController */ = {
 			isa = PBXGroup;
 			children = (
 				93D0F07A22377F950011E029 /* MainListViewController.swift */,
-				934F22DC223A4D0C007F9473 /* DetailTableViewCell.swift */,
-				93956E7E22432B11004AF3D9 /* DetailCellViewModel.swift */,
+				934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */,
+				93956E7E22432B11004AF3D9 /* PostsViewModel.swift */,
 			);
 			path = MainListViewController;
 			sourceTree = "<group>";
@@ -96,20 +110,20 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		934F22D8223A21B0007F9473 /* Api */ = {
+		934F22D8223A21B0007F9473 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				93E291722238E81D005110F7 /* ApiManager.swift */,
+				93E291722238E81D005110F7 /* NetworkingApi.swift */,
 			);
-			path = Api;
+			path = Networking;
 			sourceTree = "<group>";
 		};
-		934F22D9223A21B7007F9473 /* Data Model */ = {
+		934F22D9223A21B7007F9473 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				93E291742238E857005110F7 /* PostsDataModel.swift */,
+				93E291742238E857005110F7 /* Post.swift */,
 			);
-			path = "Data Model";
+			path = Models;
 			sourceTree = "<group>";
 		};
 		934F22DA223A21CD007F9473 /* View */ = {
@@ -151,13 +165,13 @@
 			isa = PBXGroup;
 			children = (
 				934F22D6223A2197007F9473 /* AppDelegate */,
+				931C4A72224CAAA700DE760A /* Utils */,
+				934F22D9223A21B7007F9473 /* Models */,
 				934F22D7223A21A5007F9473 /* ViewController */,
 				934F22DA223A21CD007F9473 /* View */,
-				934F22D8223A21B0007F9473 /* Api */,
-				934F22D9223A21B7007F9473 /* Data Model */,
+				934F22D8223A21B0007F9473 /* Networking */,
 				934F22DB223A21D5007F9473 /* Supporting files */,
 				93D0F07F22377F980011E029 /* Assets.xcassets */,
-				931C4A70224C622500DE760A /* SwiftSlackBot.swift */,
 			);
 			path = "RxSwift Pracice MVVM List";
 			sourceTree = "<group>";
@@ -314,14 +328,16 @@
 				931FCA502249EDB400749EB2 /* MainNavController.swift in Sources */,
 				931FCA4D2248BF5B00749EB2 /* CardView.swift in Sources */,
 				93D0F07B22377F950011E029 /* MainListViewController.swift in Sources */,
-				93956E7F22432B11004AF3D9 /* DetailCellViewModel.swift in Sources */,
-				93E291732238E81D005110F7 /* ApiManager.swift in Sources */,
+				93956E7F22432B11004AF3D9 /* PostsViewModel.swift in Sources */,
+				93E291732238E81D005110F7 /* NetworkingApi.swift in Sources */,
+				931C4A76224CC37900DE760A /* UIViewController+Rx.swift in Sources */,
 				931C4A71224C622500DE760A /* SwiftSlackBot.swift in Sources */,
 				931FCA53224A14F900749EB2 /* CardHeaderView.swift in Sources */,
 				93D0F07922377F950011E029 /* AppDelegate.swift in Sources */,
-				934F22DD223A4D0C007F9473 /* DetailTableViewCell.swift in Sources */,
-				93E291752238E857005110F7 /* PostsDataModel.swift in Sources */,
+				934F22DD223A4D0C007F9473 /* CardsTableViewCell.swift in Sources */,
+				93E291752238E857005110F7 /* Post.swift in Sources */,
 				931FCA57224A29A600749EB2 /* CardFooterView.swift in Sources */,
+				931C4A74224CAABC00DE760A /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

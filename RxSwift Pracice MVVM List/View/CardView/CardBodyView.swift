@@ -21,7 +21,7 @@ class CardBodyView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        initCardBodyView()
+        fatalError("init(coder:) has not been implemented")
     }
     
     func initCardBodyView() {
@@ -73,7 +73,7 @@ class CardBodyView: UIView {
 
 private struct CardBodyViewLog {
     @discardableResult
-    init(_ message: String) {
+    init(_ message: String, sendToSlack: Bool = false) {
         CardViewLog(message, view: "CardBodyView")
     }
 }
