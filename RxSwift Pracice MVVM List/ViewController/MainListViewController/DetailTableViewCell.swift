@@ -17,36 +17,27 @@ class DetailTableViewCell: UITableViewCell {
     
     var cardView: CardView!
     
-    /// MARK: - UI element
-//    lazy var cardView = UIView()
-    lazy var titleLabel = UILabel()
-    lazy var summaryLabel = UILabel()
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
     
-    
     func configure(viewModel: DetailCellViewModel) {
         if cardView == nil {
             cardView = CardView()
-            cardView.titleLabel.text = viewModel.title
-            cardView.dateTitleLabel.text = "12 NOV 2019"
+            cardView.cardHeaderView.titleLabel.text = viewModel.title
+            cardView.cardHeaderView.dateTitleLabel.text = viewModel.timestamp
+            cardView.cardBodyView.postTitleLabel.text = viewModel.title
+            cardView.cardBodyView.postBodyLabel.text = viewModel.body
+            cardView.cardFooterView.commentersImage = viewModel.commentersImage
             self.addSubview(cardView)
             
             cardView.snp.makeConstraints { (constraint) in
                 constraint.left.equalTo(16)
                 constraint.top.equalTo(6)
-//                constraint.bottom.equalTo(-6)
                 constraint.height.equalTo(222)
                 constraint.right.equalTo(-16)
             }
         }
     }
-}
-
-
-extension DetailTableViewCell {
-    
 }
