@@ -1,44 +1,29 @@
 PODS:
-  - Alamofire (4.8.1)
-  - RxAlamofire (4.3.0):
-    - RxAlamofire/Core (= 4.3.0)
-  - RxAlamofire/Core (4.3.0):
-    - Alamofire (~> 4.5)
-    - RxSwift (~> 4)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
-  - SnapKit (4.0.1)
-  - SwiftyJSON (4.2.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
-  - RxAlamofire
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
-  - SnapKit (~> 4.0.0)
-  - SwiftyJSON (~> 4.0)
+  - SnapKit (~> 4.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - RxAlamofire
     - RxAtomic
     - RxCocoa
     - RxSwift
     - SnapKit
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
-  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 2f0aa5c16eabf9991a5b84c4f2fda8639c413c07
+PODFILE CHECKSUM: c030cf29428ecda0cf6aa6b355743fd7031dee0a
 
 COCOAPODS: 1.5.3
