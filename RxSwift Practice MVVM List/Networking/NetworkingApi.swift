@@ -6,8 +6,6 @@
 //  Copyright © 2019 Benson Lin. All rights reserved.
 //
 
-import Foundation
-import SwiftyJSON
 import RxSwift
 import RxCocoa
 

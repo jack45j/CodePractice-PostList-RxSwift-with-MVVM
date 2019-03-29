@@ -21,6 +21,7 @@ class MainListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = "Articles"
         
         configure(tableView: tableView)
@@ -42,13 +43,23 @@ class MainListViewController: UIViewController {
         let output = viewModel.transform(input: input)
         
         output.posts
-            .drive(tableView.rx.items) { (tableView, row, element) in
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: IndexPath(row: row, section: 0)) as? CardsTableViewCell else
-                { return UITableViewCell() }
+            .drive(tableView.rx.items(
+                cellIdentifier: "Cell", cellType: CardsTableViewCell.self)) { (row, viewModel, cell) in
+                cell.configure(viewModel: viewModel)
                 
-                cell.configure(viewModel: element)
+                cell.cardView.cardFooterView.commentIconButton.rx.tap
+                    .subscribe(
+                        onNext: { _ in
+                            print("tableview \(row) commentIconButton pressed.")
+                    })
+                    .disposed(by: cell.disposeBag)
                 
-                return cell
+                cell.cardView.cardFooterView.commentButton.rx.tap
+                    .subscribe(
+                        onNext: { _ in
+                            print("tableview \(row) commentButton pressed.")
+                    })
+                    .disposed(by: cell.disposeBag)
             }
             .disposed(by: disposeBag)
     }
@@ -64,6 +75,8 @@ extension MainListViewController {
         tableView.register(CardsTableViewCell.self, forCellReuseIdentifier: "Cell")
         self.view.addSubview(tableView)
         
+        /// Is it better to make constraints in another view or viewModel?
+        /// And how?
         tableView.snp.makeConstraints { (constraint) in
             constraint.top.bottom.left.right.equalTo(0)
         }
@@ -75,10 +88,12 @@ extension MainListViewController {
 
 extension MainListViewController: UIScrollViewDelegate, UITableViewDelegate {
     
+    /// Prevent tableView from horizontal scrolling
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         scrollView.contentSize.width = 0
     }
     
+    /// Is it acceptable to put this protocol in ViewController?
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 222+12
     }

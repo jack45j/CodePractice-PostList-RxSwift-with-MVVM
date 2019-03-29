@@ -85,7 +85,7 @@ class Slackbot {
         
         if icon != nil {
             if let emojiRange = icon!.range(of: ":[a-z_0-9-+]+:", options: .regularExpression) {
-                slackJsonElements["icon_emoji"] = icon!.substring(with: emojiRange)
+                slackJsonElements["icon_emoji"] = String(icon![emojiRange]) 
             } else {
                 slackJsonElements["icon_url"] = icon
             }

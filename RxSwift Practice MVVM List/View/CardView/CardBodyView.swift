@@ -51,23 +51,22 @@ class CardBodyView: UIView {
         cardBodyView.spacing = 6
         self.addSubview(cardBodyView)
         
-        CardBodyViewLog("Making cardBodyView constraints")
         cardBodyView.snp.makeConstraints { (constraint) in
             constraint.left.right.equalTo(0)
             constraint.top.equalTo(13)
             constraint.bottom.equalTo(-12)
         }
         
-        CardBodyViewLog("Making postTitleLabel constraints")
         postTitleLabel.snp.makeConstraints { (constraint) in
             constraint.left.right.equalTo(0)
             constraint.height.equalTo(25)
         }
         
-        CardBodyViewLog("Making postBodyLabel constraints")
         postBodyLabel.snp.makeConstraints { (constraint) in
             constraint.left.right.equalTo(0)
         }
+        
+        CardBodyViewLog("Finishing layoutSubviews")
     }
 }
 

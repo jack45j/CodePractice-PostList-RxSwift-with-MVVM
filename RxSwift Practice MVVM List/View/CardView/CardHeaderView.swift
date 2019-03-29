@@ -47,7 +47,6 @@ class CardHeaderView: UIView {
         cardHeaderView.alignment = .center
         cardHeaderView.spacing = 12
         
-        CardHeaderViewLog("Making cardHeaderView constraints")
         self.addSubview(cardHeaderView)
         cardHeaderView.snp.makeConstraints { (constraint) in
             constraint.bottom.equalTo(-12)
@@ -55,7 +54,6 @@ class CardHeaderView: UIView {
             constraint.height.equalTo(36)
         }
         
-        CardHeaderViewLog("Making thumbnailImageView constraints")
         thumbnailImageView.snp.makeConstraints { (constraint) in
             constraint.left.equalTo(0)
             constraint.width.equalTo(thumbnailImageView.snp.height)
@@ -63,18 +61,15 @@ class CardHeaderView: UIView {
         thumbnailImageView.layer.cornerRadius = thumbnailImageView.frame.width/2
         thumbnailImageView.layoutIfNeeded()
         
-        CardHeaderViewLog("Making titleLabel constraints")
         titleLabel.snp.makeConstraints { (constraint) in
             constraint.top.bottom.equalTo(0)
         }
         
-        CardHeaderViewLog("Making dateTitleLabel constraints")
         dateTitleLabel.snp.makeConstraints { (constraint) in
             constraint.top.bottom.equalTo(0)
             constraint.width.equalTo(86)
         }
         
-        CardHeaderViewLog("Making headerSeparator constraints")
         let headerSeparator = UIView()
         cardHeaderView.addSubview(headerSeparator)
         headerSeparator.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)

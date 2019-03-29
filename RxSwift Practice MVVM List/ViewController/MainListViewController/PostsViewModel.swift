@@ -18,8 +18,6 @@ class PostsViewModel: ViewModelType {
     
     struct Output {
         let posts: Driver<[PostViewModel]>
-//        let timestamp: Driver<String>
-//        let commentersImage: Driver<[UIImage]>
     }
     
     struct Dependencies {
@@ -41,9 +39,7 @@ class PostsViewModel: ViewModelType {
                     .asDriver(onErrorJustReturn: [])
         }
         
-        let posts = Driver.merge(initialPosts)
-        
-        let postViewModels = posts.map { $0.map { PostViewModel(post: $0) } }
+        let postViewModels = initialPosts.map{ $0.map { PostViewModel(post: $0) } }
         
         return Output(posts: postViewModels)
     }

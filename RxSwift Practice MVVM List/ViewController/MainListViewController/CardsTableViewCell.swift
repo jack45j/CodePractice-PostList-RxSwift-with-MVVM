@@ -15,9 +15,22 @@ class CardsTableViewCell: UITableViewCell {
     
     var cardView: CardView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    private(set) var disposeBag = DisposeBag()
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
         
+        /// Prevent multiple subscribe caused by reuse cell.
+        disposeBag = DisposeBag()
+    }
+    
+    override func layoutSubviews() {
+        cardView.snp.makeConstraints { (constraint) in
+            constraint.left.equalTo(16)
+            constraint.top.equalTo(6)
+            constraint.height.equalTo(222)
+            constraint.right.equalTo(-16)
+        }
     }
     
     func configure(viewModel: PostViewModel) {
@@ -29,13 +42,6 @@ class CardsTableViewCell: UITableViewCell {
             cardView.cardBodyView.postBodyLabel.text = viewModel.body
             
             self.addSubview(cardView)
-            
-            cardView.snp.makeConstraints { (constraint) in
-                constraint.left.equalTo(16)
-                constraint.top.equalTo(6)
-                constraint.height.equalTo(222)
-                constraint.right.equalTo(-16)
-            }
         }
     }
 }

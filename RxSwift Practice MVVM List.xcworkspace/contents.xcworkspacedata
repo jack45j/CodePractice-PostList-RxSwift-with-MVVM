@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:RxSwift Pracice MVVM List.xcodeproj">
+      location = "group:RxSwift Practice MVVM List.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

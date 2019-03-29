@@ -56,7 +56,6 @@ class CardFooterView: UIView {
         cardFooterView.spacing = 6
         self.addSubview(cardFooterView)
         
-        CardFooterViewLog("Making cardFooterView constraints")
         cardFooterView.snp.makeConstraints { (constraint) in
             constraint.top.equalTo(12)
             constraint.left.right.bottom.equalTo(0)
@@ -82,7 +81,7 @@ class CardFooterView: UIView {
             view.layer.borderColor = UIColor.white.cgColor
             view.layer.borderWidth = 1
             
-            /// aplly image from commentersImage
+            #warning("TODO: aplly image from commentersImage")
             if let imageView = view as? UIImageView {
                 imageView.image = UIImage(named: "myKitty")
             }
@@ -93,7 +92,6 @@ class CardFooterView: UIView {
         }
         
         /// Note that commentIconButton is NOT an arranged view but a subview of footerStackview because of the stackview canvas constraint limit.
-        //
         cardFooterView.addSubview(commentIconButton)
         commentIconButton.snp.makeConstraints { (constraint) in
             constraint.top.equalTo(-5)
@@ -102,7 +100,6 @@ class CardFooterView: UIView {
             constraint.width.equalTo(commentIconButton.snp.height)
         }
         
-        CardFooterViewLog("Making footerSeparator constraints")
         let footerSeparator = UIView()
         cardFooterView.addSubview(footerSeparator)
         footerSeparator.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
@@ -111,6 +108,8 @@ class CardFooterView: UIView {
             constraint.centerY.equalTo(self.snp.top).offset(-1)
             constraint.height.equalTo(1)
         }
+        
+        CardFooterViewLog("Finishing layoutSubviews")
     }
 }
 

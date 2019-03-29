@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "93D0F07422377F950011E029"
-               BuildableName = "RxSwift Pracice MVVM List.app"
-               BlueprintName = "RxSwift Pracice MVVM List"
-               ReferencedContainer = "container:RxSwift Pracice MVVM List.xcodeproj">
+               BuildableName = "RxSwift Practice MVVM List.app"
+               BlueprintName = "RxSwift Practice MVVM List"
+               ReferencedContainer = "container:RxSwift Practice MVVM List.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93D0F07422377F950011E029"
-            BuildableName = "RxSwift Pracice MVVM List.app"
-            BlueprintName = "RxSwift Pracice MVVM List"
-            ReferencedContainer = "container:RxSwift Pracice MVVM List.xcodeproj">
+            BuildableName = "RxSwift Practice MVVM List.app"
+            BlueprintName = "RxSwift Practice MVVM List"
+            ReferencedContainer = "container:RxSwift Practice MVVM List.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93D0F07422377F950011E029"
-            BuildableName = "RxSwift Pracice MVVM List.app"
-            BlueprintName = "RxSwift Pracice MVVM List"
-            ReferencedContainer = "container:RxSwift Pracice MVVM List.xcodeproj">
+            BuildableName = "RxSwift Practice MVVM List.app"
+            BlueprintName = "RxSwift Practice MVVM List"
+            ReferencedContainer = "container:RxSwift Practice MVVM List.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93D0F07422377F950011E029"
-            BuildableName = "RxSwift Pracice MVVM List.app"
-            BlueprintName = "RxSwift Pracice MVVM List"
-            ReferencedContainer = "container:RxSwift Pracice MVVM List.xcodeproj">
+            BuildableName = "RxSwift Practice MVVM List.app"
+            BlueprintName = "RxSwift Practice MVVM List"
+            ReferencedContainer = "container:RxSwift Practice MVVM List.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

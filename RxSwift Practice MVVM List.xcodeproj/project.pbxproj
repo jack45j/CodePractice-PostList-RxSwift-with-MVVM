@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15134A2FBC7C7027D608CFF9 /* Pods_RxSwift_Practice_MVVM_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBF2A7380AD3E5DC7B88CF6 /* Pods_RxSwift_Practice_MVVM_List.framework */; };
 		931C4A71224C622500DE760A /* SwiftSlackBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A70224C622500DE760A /* SwiftSlackBot.swift */; };
 		931C4A74224CAABC00DE760A /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A73224CAABC00DE760A /* ViewModelType.swift */; };
 		931C4A76224CC37900DE760A /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A75224CC37900DE760A /* UIViewController+Rx.swift */; };
@@ -23,12 +24,12 @@
 		93D0F08322377F980011E029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D0F08122377F980011E029 /* LaunchScreen.storyboard */; };
 		93E291732238E81D005110F7 /* NetworkingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E291722238E81D005110F7 /* NetworkingApi.swift */; };
 		93E291752238E857005110F7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E291742238E857005110F7 /* Post.swift */; };
-		95FAA0DDC0CD23ABEE688876 /* Pods_RxSwift_Pracice_MVVM_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD60B465C51696785ADDAA0 /* Pods_RxSwift_Pracice_MVVM_List.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		71752BC5BF26562829E2AB63 /* Pods-RxSwift Pracice MVVM List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Pracice MVVM List.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List.release.xcconfig"; sourceTree = "<group>"; };
-		882EEAF4DD8EDDD58C170828 /* Pods-RxSwift Pracice MVVM List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Pracice MVVM List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List.debug.xcconfig"; sourceTree = "<group>"; };
+		0CBF2A7380AD3E5DC7B88CF6 /* Pods_RxSwift_Practice_MVVM_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Practice_MVVM_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC27E314524CAD95C0804A1 /* Pods-RxSwift Practice MVVM List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Practice MVVM List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Practice MVVM List/Pods-RxSwift Practice MVVM List.debug.xcconfig"; sourceTree = "<group>"; };
+		864BB3A1C36E78C3AEE05DFD /* Pods-RxSwift Practice MVVM List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Practice MVVM List.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Practice MVVM List/Pods-RxSwift Practice MVVM List.release.xcconfig"; sourceTree = "<group>"; };
 		931C4A70224C622500DE760A /* SwiftSlackBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlackBot.swift; sourceTree = "<group>"; };
 		931C4A73224CAABC00DE760A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		931C4A75224CC37900DE760A /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
@@ -39,7 +40,7 @@
 		931FCA56224A29A600749EB2 /* CardFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFooterView.swift; sourceTree = "<group>"; };
 		934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
 		93956E7E22432B11004AF3D9 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
-		93D0F07522377F950011E029 /* RxSwift Pracice MVVM List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift Pracice MVVM List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D0F07522377F950011E029 /* RxSwift Practice MVVM List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift Practice MVVM List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D0F07822377F950011E029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93D0F07A22377F950011E029 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		93D0F07F22377F980011E029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		93D0F08422377F980011E029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93E291722238E81D005110F7 /* NetworkingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApi.swift; sourceTree = "<group>"; };
 		93E291742238E857005110F7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		FBD60B465C51696785ADDAA0 /* Pods_RxSwift_Pracice_MVVM_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Pracice_MVVM_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +55,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95FAA0DDC0CD23ABEE688876 /* Pods_RxSwift_Pracice_MVVM_List.framework in Frameworks */,
+				15134A2FBC7C7027D608CFF9 /* Pods_RxSwift_Practice_MVVM_List.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345527C4B0C2CD8623DFFCDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EC27E314524CAD95C0804A1 /* Pods-RxSwift Practice MVVM List.debug.xcconfig */,
+				864BB3A1C36E78C3AEE05DFD /* Pods-RxSwift Practice MVVM List.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		478B0C8939EE529647C8F631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CBF2A7380AD3E5DC7B88CF6 /* Pods_RxSwift_Practice_MVVM_List.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		931C4A72224CAAA700DE760A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,73 +163,56 @@
 		93D0F06C22377F950011E029 = {
 			isa = PBXGroup;
 			children = (
-				93D0F07722377F950011E029 /* RxSwift Pracice MVVM List */,
+				93D0F07722377F950011E029 /* RxSwift Practice MVVM List */,
 				93D0F07622377F950011E029 /* Products */,
-				CD504DB550E552EC63892D3B /* Pods */,
-				CCB6C97CD6925415CAFA8ACB /* Frameworks */,
+				345527C4B0C2CD8623DFFCDB /* Pods */,
+				478B0C8939EE529647C8F631 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		93D0F07622377F950011E029 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93D0F07522377F950011E029 /* RxSwift Pracice MVVM List.app */,
+				93D0F07522377F950011E029 /* RxSwift Practice MVVM List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93D0F07722377F950011E029 /* RxSwift Pracice MVVM List */ = {
+		93D0F07722377F950011E029 /* RxSwift Practice MVVM List */ = {
 			isa = PBXGroup;
 			children = (
 				934F22D6223A2197007F9473 /* AppDelegate */,
-				931C4A72224CAAA700DE760A /* Utils */,
 				934F22D9223A21B7007F9473 /* Models */,
-				934F22D7223A21A5007F9473 /* ViewController */,
 				934F22DA223A21CD007F9473 /* View */,
+				934F22D7223A21A5007F9473 /* ViewController */,
+				931C4A72224CAAA700DE760A /* Utils */,
 				934F22D8223A21B0007F9473 /* Networking */,
 				934F22DB223A21D5007F9473 /* Supporting files */,
 				93D0F07F22377F980011E029 /* Assets.xcassets */,
 			);
-			path = "RxSwift Pracice MVVM List";
-			sourceTree = "<group>";
-		};
-		CCB6C97CD6925415CAFA8ACB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FBD60B465C51696785ADDAA0 /* Pods_RxSwift_Pracice_MVVM_List.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CD504DB550E552EC63892D3B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				882EEAF4DD8EDDD58C170828 /* Pods-RxSwift Pracice MVVM List.debug.xcconfig */,
-				71752BC5BF26562829E2AB63 /* Pods-RxSwift Pracice MVVM List.release.xcconfig */,
-			);
-			name = Pods;
+			path = "RxSwift Practice MVVM List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93D0F07422377F950011E029 /* RxSwift Pracice MVVM List */ = {
+		93D0F07422377F950011E029 /* RxSwift Practice MVVM List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93D0F08722377F980011E029 /* Build configuration list for PBXNativeTarget "RxSwift Pracice MVVM List" */;
+			buildConfigurationList = 93D0F08722377F980011E029 /* Build configuration list for PBXNativeTarget "RxSwift Practice MVVM List" */;
 			buildPhases = (
-				F26066F0E156500F58AD53A8 /* [CP] Check Pods Manifest.lock */,
+				96B773A0E4F29D22604273A6 /* [CP] Check Pods Manifest.lock */,
 				93D0F07122377F950011E029 /* Sources */,
 				93D0F07222377F950011E029 /* Frameworks */,
 				93D0F07322377F950011E029 /* Resources */,
-				FCFA0CC9487E9E0C0E276DF4 /* [CP] Embed Pods Frameworks */,
+				B457D1559D58D69350394F9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "RxSwift Pracice MVVM List";
+			name = "RxSwift Practice MVVM List";
 			productName = "RxSwift Pracice MVVM List";
-			productReference = 93D0F07522377F950011E029 /* RxSwift Pracice MVVM List.app */;
+			productReference = 93D0F07522377F950011E029 /* RxSwift Practice MVVM List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -230,7 +230,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 93D0F07022377F950011E029 /* Build configuration list for PBXProject "RxSwift Pracice MVVM List" */;
+			buildConfigurationList = 93D0F07022377F950011E029 /* Build configuration list for PBXProject "RxSwift Practice MVVM List" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -243,7 +243,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93D0F07422377F950011E029 /* RxSwift Pracice MVVM List */,
+				93D0F07422377F950011E029 /* RxSwift Practice MVVM List */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F26066F0E156500F58AD53A8 /* [CP] Check Pods Manifest.lock */ = {
+		96B773A0E4F29D22604273A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,14 +276,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxSwift Pracice MVVM List-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxSwift Practice MVVM List-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCFA0CC9487E9E0C0E276DF4 /* [CP] Embed Pods Frameworks */ = {
+		B457D1559D58D69350394F9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,30 +291,24 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwift Practice MVVM List/Pods-RxSwift Practice MVVM List-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwift Pracice MVVM List/Pods-RxSwift Pracice MVVM List-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwift Practice MVVM List/Pods-RxSwift Practice MVVM List-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -473,12 +467,12 @@
 		};
 		93D0F08822377F980011E029 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 882EEAF4DD8EDDD58C170828 /* Pods-RxSwift Pracice MVVM List.debug.xcconfig */;
+			baseConfigurationReference = 3EC27E314524CAD95C0804A1 /* Pods-RxSwift Practice MVVM List.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79399T3H3C;
-				INFOPLIST_FILE = "$(SRCROOT)/RxSwift Pracice MVVM List/Supporting files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RxSwift Practice MVVM List/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,12 +487,12 @@
 		};
 		93D0F08922377F980011E029 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71752BC5BF26562829E2AB63 /* Pods-RxSwift Pracice MVVM List.release.xcconfig */;
+			baseConfigurationReference = 864BB3A1C36E78C3AEE05DFD /* Pods-RxSwift Practice MVVM List.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79399T3H3C;
-				INFOPLIST_FILE = "$(SRCROOT)/RxSwift Pracice MVVM List/Supporting files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RxSwift Practice MVVM List/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -514,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93D0F07022377F950011E029 /* Build configuration list for PBXProject "RxSwift Pracice MVVM List" */ = {
+		93D0F07022377F950011E029 /* Build configuration list for PBXProject "RxSwift Practice MVVM List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93D0F08522377F980011E029 /* Debug */,
@@ -523,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93D0F08722377F980011E029 /* Build configuration list for PBXNativeTarget "RxSwift Pracice MVVM List" */ = {
+		93D0F08722377F980011E029 /* Build configuration list for PBXNativeTarget "RxSwift Practice MVVM List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93D0F08822377F980011E029 /* Debug */,
