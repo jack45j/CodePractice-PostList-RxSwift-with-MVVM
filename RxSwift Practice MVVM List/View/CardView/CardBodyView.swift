@@ -72,7 +72,7 @@ class CardBodyView: UIView {
 
 private struct CardBodyViewLog {
     @discardableResult
-    init(_ message: String, sendToSlack: Bool = false) {
+    init(_ message: String) {
         CardViewLog(message, view: "CardBodyView")
     }
 }

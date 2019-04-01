@@ -17,6 +17,7 @@
 		931FCA55224A25EA00749EB2 /* CardBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA54224A25EA00749EB2 /* CardBodyView.swift */; };
 		931FCA57224A29A600749EB2 /* CardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA56224A29A600749EB2 /* CardFooterView.swift */; };
 		934F22DD223A4D0C007F9473 /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */; };
+		935629D9224E05B9001C3616 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935629D8224E05B9001C3616 /* Comment.swift */; };
 		93956E7F22432B11004AF3D9 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93956E7E22432B11004AF3D9 /* PostsViewModel.swift */; };
 		93D0F07922377F950011E029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0F07822377F950011E029 /* AppDelegate.swift */; };
 		93D0F07B22377F950011E029 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0F07A22377F950011E029 /* MainListViewController.swift */; };
@@ -39,6 +40,7 @@
 		931FCA54224A25EA00749EB2 /* CardBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBodyView.swift; sourceTree = "<group>"; };
 		931FCA56224A29A600749EB2 /* CardFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFooterView.swift; sourceTree = "<group>"; };
 		934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
+		935629D8224E05B9001C3616 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		93956E7E22432B11004AF3D9 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		93D0F07522377F950011E029 /* RxSwift Practice MVVM List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift Practice MVVM List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D0F07822377F950011E029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				93E291742238E857005110F7 /* Post.swift */,
+				935629D8224E05B9001C3616 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				931C4A71224C622500DE760A /* SwiftSlackBot.swift in Sources */,
 				931FCA53224A14F900749EB2 /* CardHeaderView.swift in Sources */,
 				93D0F07922377F950011E029 /* AppDelegate.swift in Sources */,
+				935629D9224E05B9001C3616 /* Comment.swift in Sources */,
 				934F22DD223A4D0C007F9473 /* CardsTableViewCell.swift in Sources */,
 				93E291752238E857005110F7 /* Post.swift in Sources */,
 				931FCA57224A29A600749EB2 /* CardFooterView.swift in Sources */,

@@ -8,12 +8,11 @@
 
 import RxSwift
 import RxCocoa
-//import UIKit
 
 class PostsViewModel: ViewModelType {
     
     struct Input {
-        let ready: Driver<Void>
+        let initial: Driver<Void>
     }
     
     struct Output {
@@ -31,7 +30,7 @@ class PostsViewModel: ViewModelType {
     }
     
     func transform(input: Input) -> Output {
-        let initialPosts = input.ready
+        let initialPosts = input.initial
             .flatMap { _ in
                 self.dependencies.networkingApi
                     .postsData()
@@ -59,6 +58,7 @@ extension PostViewModel {
             from: Date(timeIntervalSince1970: generateRandomDate(daysBack: 100)))
     }
 }
+
 
 /// timestamp formatter
 ///

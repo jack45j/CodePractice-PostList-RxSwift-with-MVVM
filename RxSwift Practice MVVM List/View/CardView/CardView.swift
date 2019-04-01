@@ -125,15 +125,9 @@ class CardView: UIView {
 
 struct CardViewLog {
     @discardableResult
-    init(_ message: String, view: String = "self", sendToSlack: Bool = false) {
+    init(_ message: String, view: String = "self") {
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             if appDelegate.enableDebugLog {
-                
-                if sendToSlack {
-                    let slackBot = Slackbot(
-                        url: "https://hooks.slack.com/services/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")
-                    slackBot.sendMessage(message: "[CardView (\(view))] \(message)")
-                }
                 NSLog("[CardView (\(view))] \(message)")
             }
         }

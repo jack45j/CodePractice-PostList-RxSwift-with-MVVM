@@ -115,7 +115,7 @@ class CardFooterView: UIView {
 
 private struct CardFooterViewLog {
     @discardableResult
-    init(_ message: String, sendToSlack: Bool = false) {
+    init(_ message: String) {
         CardViewLog(message, view: "CardFooterView")
     }
 }

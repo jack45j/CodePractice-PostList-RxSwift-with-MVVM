@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let window = window {
             let viewModel = PostsViewModel(dependencies: PostsViewModel.Dependencies(networkingApi: NetworkingApi()))
-            let rootNavController = MainNavController(rootViewController: MainListViewController(viewModel: viewModel))
+            let rootNavController = MainNavController(rootViewController: MainListViewController(postViewModel: viewModel))
             window.rootViewController = rootNavController
             window.makeKeyAndVisible()
         }
