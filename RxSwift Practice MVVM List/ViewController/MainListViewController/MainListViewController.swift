@@ -14,6 +14,7 @@ import SnapKit
 class MainListViewController: UIViewController {
     
     var postsViewModel: PostsViewModel!
+    var commentsViewModel: CommentsViewModel!
     
     lazy var tableView = UITableView()
     
@@ -29,9 +30,10 @@ class MainListViewController: UIViewController {
         bindViewModel()
     }
     
-    init(postViewModel: PostsViewModel) {
+    init(postViewModel: PostsViewModel, commentViewModel: CommentsViewModel) {
         super.init(nibName: nil, bundle: nil)
         self.postsViewModel = postViewModel
+        self.commentsViewModel = commentViewModel
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,12 +44,16 @@ class MainListViewController: UIViewController {
         let postsInput = PostsViewModel.Input(initial: rx.viewWillAppear.asDriver())
         let postsOutput = postsViewModel.transform(input: postsInput)
         
+//        let commentsInput = CommentsViewModel.Input(initial: rx.viewWillAppear.asDriver())
+//        let commentsOutput = commentsViewModel.transform(input: commentsInput)
+        
         postsOutput.posts
             .drive(tableView.rx.items(
                 cellIdentifier: "Cell", cellType: CardsTableViewCell.self)) { (row, viewModel, cell) in
                     cell.configure(viewModel: viewModel)
                     
-                    /// How to bind comments amount and data to commentButton's text?
+                    #warning("How to bind comments amount and data to commentButton's text?")
+                    /// want to set button's title to "n comments" and print comments string after button pressed.
                     
                     cell.cardView.cardFooterView.commentIconButton.rx.tap
                         .subscribe(

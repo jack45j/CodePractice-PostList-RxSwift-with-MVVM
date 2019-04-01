@@ -39,7 +39,6 @@ class CardFooterView: UIView {
             commenterStackView.addArrangedSubview(UIImageView())
         }
         
-        commentButton.setTitle("30 comments", for: .normal)
         commentButton.setTitleColor(UIColor(red: 195/255, green: 195/255, blue: 195/255, alpha: 1), for: .normal)
         commentButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         commentButton.contentHorizontalAlignment = .left
