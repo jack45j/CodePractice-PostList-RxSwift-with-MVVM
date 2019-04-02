@@ -9,42 +9,42 @@
 import RxSwift
 import RxCocoa
 
-class CommentsViewModel: ViewModelType {
-    
-    struct Input {
-        let initial: Driver<Void>
-    }
-    
-    struct Output {
-        let comments: Driver<[CommentViewModel]>
-    }
-    
-    struct Dependencies {
-        let networkingApi: NetworkingApi
-    }
-    
-    private let dependencies: Dependencies
-    
-    init(dependencies: Dependencies) {
-        self.dependencies = dependencies
-    }
-    
-    func transform(input: Input) -> Output {
-        let initialComments = input.initial
-            .flatMap { _ in
-                self.dependencies.networkingApi
-                    .commentsData()
-                    .asSingle()
-                    .asDriver(onErrorJustReturn: [])
-        }
-        
-        let commentViewModels = initialComments.map{ $0.map { CommentViewModel(comment: $0) } }
-        return Output(comments: commentViewModels)
-    }
-}
+//class CommentsViewModel: ViewModelType {
+//
+//    struct Input {
+//        let initial: Driver<Void>
+//    }
+//
+//    struct Output {
+//        let comments: Driver<[CommentViewModel]>
+//    }
+//
+//    struct Dependencies {
+//        let networkingApi: NetworkingApi
+//    }
+//
+//    private let dependencies: Dependencies
+//
+//    init(dependencies: Dependencies) {
+//        self.dependencies = dependencies
+//    }
+//
+//    func transform(input: Input) -> Output {
+//        let initialComments = input.initial
+//            .flatMap { _ in
+//                self.dependencies.networkingApi
+//                    .commentsData()
+//                    .asSingle()
+//                    .asDriver(onErrorJustReturn: [])
+//        }
+//
+//        let commentViewModels = initialComments.map{ $0.map { CommentViewModel(comment: $0) } }
+//        return Output(comments: commentViewModels)
+//    }
+//}
 
 struct CommentViewModel {
-    let postId: String
+    let postId: Int
     let body: String
 }
 

@@ -49,10 +49,10 @@ class NetworkingApi {
         }
     }
     
-    func commentsData(with postId: String? = String()) -> Observable<[Comment]> {
+    func commentsData(with postId: String? = "") -> Observable<[Comment]> {
         var request = URLRequest(url: Address.comments.url)
         
-        if postId == nil {
+        if postId == "" {
             request = URLRequest(url: Address.comments.url)
         } else {
             request = URLRequest(url: Address.comments.with(id: postId!))

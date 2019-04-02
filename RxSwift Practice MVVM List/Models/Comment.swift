@@ -9,7 +9,7 @@
 import Foundation
 
 struct Comment: Codable {
-    let postId: String
+    let postId: Int
     let id: Int
     let name: String
     let email: String
@@ -25,7 +25,7 @@ struct Comment: Codable {
     
     init(from decoder: Decoder) throws {
         let posts = try decoder.container(keyedBy: CodingKeys.self)
-        postId = try posts.decodeIfPresent(String.self, forKey: .postId)!
+        postId = try posts.decodeIfPresent(Int.self, forKey: .postId)!
         id = try posts.decodeIfPresent(Int.self, forKey: .id)!
         name = try posts.decodeIfPresent(String.self, forKey: .name)!
         email = try posts.decodeIfPresent(String.self, forKey: .email)!
