@@ -44,4 +44,8 @@ class CardsTableViewCell: UITableViewCell {
             self.addSubview(cardView)
         }
     }
+    
+    func updateComment(commentViewModels: [CommentViewModel]) {
+        cardView.cardFooterView.commentButton.setTitle("\(commentViewModels.count)", for: .normal)
+    }
 }

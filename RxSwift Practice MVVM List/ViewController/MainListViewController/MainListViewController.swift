@@ -13,7 +13,7 @@ import SnapKit
 
 class MainListViewController: UIViewController {
     
-    var viewModel: PostsViewModel!
+    var postsViewModel: PostsViewModel!
     
     lazy var tableView = UITableView()
     
@@ -29,9 +29,9 @@ class MainListViewController: UIViewController {
         bindViewModel()
     }
     
-    init(viewModel: PostsViewModel) {
+    init(postViewModel: PostsViewModel) {
         super.init(nibName: nil, bundle: nil)
-        self.viewModel = viewModel
+        self.postsViewModel = postViewModel
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -39,27 +39,18 @@ class MainListViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        let input = PostsViewModel.Input(ready: rx.viewWillAppear.asDriver())
-        let output = viewModel.transform(input: input)
-        
-        output.posts
+        let postsInput = PostsViewModel.Input(initial: rx.viewWillAppear.asDriver())
+        let postsOutput = postsViewModel.transform(input: postsInput)
+                    
+        postsOutput.posts
             .drive(tableView.rx.items(
                 cellIdentifier: "Cell", cellType: CardsTableViewCell.self)) { (row, viewModel, cell) in
-                cell.configure(viewModel: viewModel)
-                
-                cell.cardView.cardFooterView.commentIconButton.rx.tap
-                    .subscribe(
-                        onNext: { _ in
-                            print("tableview \(row) commentIconButton pressed.")
-                    })
-                    .disposed(by: cell.disposeBag)
-                
-                cell.cardView.cardFooterView.commentButton.rx.tap
-                    .subscribe(
-                        onNext: { _ in
-                            print("tableview \(row) commentButton pressed.")
-                    })
-                    .disposed(by: cell.disposeBag)
+                    cell.configure(viewModel: viewModel)
+                    
+                    postsOutput.comments.asObservable()
+                        .map{ "\($0.filter({ $0.postId == row+1 }).count) comments" }
+                        .bind(to: cell.cardView.cardFooterView.commentButton.rx.title(for: .normal))
+                        .disposed(by: self.disposeBag)
             }
             .disposed(by: disposeBag)
     }

@@ -8,16 +8,16 @@
 
 import RxSwift
 import RxCocoa
-//import UIKit
 
 class PostsViewModel: ViewModelType {
     
     struct Input {
-        let ready: Driver<Void>
+        let initial: Driver<Void>
     }
     
     struct Output {
         let posts: Driver<[PostViewModel]>
+        let comments: Driver<[CommentViewModel]>
     }
     
     struct Dependencies {
@@ -31,7 +31,7 @@ class PostsViewModel: ViewModelType {
     }
     
     func transform(input: Input) -> Output {
-        let initialPosts = input.ready
+        let initialPosts = input.initial
             .flatMap { _ in
                 self.dependencies.networkingApi
                     .postsData()
@@ -39,9 +39,19 @@ class PostsViewModel: ViewModelType {
                     .asDriver(onErrorJustReturn: [])
         }
         
+        let initialComments = input.initial
+            .flatMap { _ in
+                self.dependencies.networkingApi
+                    .commentsData()
+                    .asSingle()
+                    .asDriver(onErrorJustReturn: [])
+        }
+        
         let postViewModels = initialPosts.map{ $0.map { PostViewModel(post: $0) } }
         
-        return Output(posts: postViewModels)
+        let commentViewModels = initialComments.map{ $0.map  { CommentViewModel(comment: $0) } }
+        
+        return Output(posts: postViewModels, comments: commentViewModels)
     }
 }
 
@@ -59,6 +69,7 @@ extension PostViewModel {
             from: Date(timeIntervalSince1970: generateRandomDate(daysBack: 100)))
     }
 }
+
 
 /// timestamp formatter
 ///

@@ -85,7 +85,7 @@ class CardHeaderView: UIView {
 
 private struct CardHeaderViewLog {
     @discardableResult
-    init(_ message: String, sendToSlack: Bool = false) {
-        CardViewLog(message, view: "CardHeaderView", sendToSlack: sendToSlack)
+    init(_ message: String) {
+        CardViewLog(message, view: "CardHeaderView")
     }
 }
