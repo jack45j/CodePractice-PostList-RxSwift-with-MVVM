@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		15134A2FBC7C7027D608CFF9 /* Pods_RxSwift_Practice_MVVM_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBF2A7380AD3E5DC7B88CF6 /* Pods_RxSwift_Practice_MVVM_List.framework */; };
-		931C4A71224C622500DE760A /* SwiftSlackBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A70224C622500DE760A /* SwiftSlackBot.swift */; };
 		931C4A74224CAABC00DE760A /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A73224CAABC00DE760A /* ViewModelType.swift */; };
 		931C4A76224CC37900DE760A /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C4A75224CC37900DE760A /* UIViewController+Rx.swift */; };
 		931FCA4D2248BF5B00749EB2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA4C2248BF5B00749EB2 /* CardView.swift */; };
@@ -18,7 +17,7 @@
 		931FCA57224A29A600749EB2 /* CardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FCA56224A29A600749EB2 /* CardFooterView.swift */; };
 		934F22DD223A4D0C007F9473 /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */; };
 		935629D9224E05B9001C3616 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935629D8224E05B9001C3616 /* Comment.swift */; };
-		935629DF2251F3E1001C3616 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935629DE2251F3E1001C3616 /* CommentsViewModel.swift */; };
+		935629DF2251F3E1001C3616 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935629DE2251F3E1001C3616 /* CommentViewModel.swift */; };
 		93956E7F22432B11004AF3D9 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93956E7E22432B11004AF3D9 /* PostsViewModel.swift */; };
 		93D0F07922377F950011E029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0F07822377F950011E029 /* AppDelegate.swift */; };
 		93D0F07B22377F950011E029 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0F07A22377F950011E029 /* MainListViewController.swift */; };
@@ -32,7 +31,6 @@
 		0CBF2A7380AD3E5DC7B88CF6 /* Pods_RxSwift_Practice_MVVM_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Practice_MVVM_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC27E314524CAD95C0804A1 /* Pods-RxSwift Practice MVVM List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Practice MVVM List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Practice MVVM List/Pods-RxSwift Practice MVVM List.debug.xcconfig"; sourceTree = "<group>"; };
 		864BB3A1C36E78C3AEE05DFD /* Pods-RxSwift Practice MVVM List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift Practice MVVM List.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift Practice MVVM List/Pods-RxSwift Practice MVVM List.release.xcconfig"; sourceTree = "<group>"; };
-		931C4A70224C622500DE760A /* SwiftSlackBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlackBot.swift; sourceTree = "<group>"; };
 		931C4A73224CAABC00DE760A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		931C4A75224CC37900DE760A /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		931FCA4C2248BF5B00749EB2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -42,7 +40,7 @@
 		931FCA56224A29A600749EB2 /* CardFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFooterView.swift; sourceTree = "<group>"; };
 		934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
 		935629D8224E05B9001C3616 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		935629DE2251F3E1001C3616 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		935629DE2251F3E1001C3616 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 		93956E7E22432B11004AF3D9 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		93D0F07522377F950011E029 /* RxSwift Practice MVVM List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift Practice MVVM List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D0F07822377F950011E029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 		931C4A72224CAAA700DE760A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				931C4A70224C622500DE760A /* SwiftSlackBot.swift */,
 				931C4A73224CAABC00DE760A /* ViewModelType.swift */,
 				931C4A75224CC37900DE760A /* UIViewController+Rx.swift */,
 			);
@@ -99,7 +96,7 @@
 				93D0F07A22377F950011E029 /* MainListViewController.swift */,
 				934F22DC223A4D0C007F9473 /* CardsTableViewCell.swift */,
 				93956E7E22432B11004AF3D9 /* PostsViewModel.swift */,
-				935629DE2251F3E1001C3616 /* CommentsViewModel.swift */,
+				935629DE2251F3E1001C3616 /* CommentViewModel.swift */,
 			);
 			path = MainListViewController;
 			sourceTree = "<group>";
@@ -328,11 +325,10 @@
 				931FCA502249EDB400749EB2 /* MainNavController.swift in Sources */,
 				931FCA4D2248BF5B00749EB2 /* CardView.swift in Sources */,
 				93D0F07B22377F950011E029 /* MainListViewController.swift in Sources */,
-				935629DF2251F3E1001C3616 /* CommentsViewModel.swift in Sources */,
+				935629DF2251F3E1001C3616 /* CommentViewModel.swift in Sources */,
 				93956E7F22432B11004AF3D9 /* PostsViewModel.swift in Sources */,
 				93E291732238E81D005110F7 /* NetworkingApi.swift in Sources */,
 				931C4A76224CC37900DE760A /* UIViewController+Rx.swift in Sources */,
-				931C4A71224C622500DE760A /* SwiftSlackBot.swift in Sources */,
 				931FCA53224A14F900749EB2 /* CardHeaderView.swift in Sources */,
 				93D0F07922377F950011E029 /* AppDelegate.swift in Sources */,
 				935629D9224E05B9001C3616 /* Comment.swift in Sources */,
