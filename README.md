@@ -13,4 +13,4 @@ This is a project for practicing snapKit and RxSwift with MVVM.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is unlicense - see the [LICENSE](https://github.com/jack45j/practice-RxSwift-with-MVVM/blob/master/LICENSE) file for details
