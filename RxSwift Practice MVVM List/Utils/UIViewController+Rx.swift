@@ -15,10 +15,3 @@ extension Reactive where Base: UIViewController {
         return ControlEvent(events: source)
     }
 }
-
-//extension Reactive where Base: UIView {
-//    var layoutSubViews: ControlEvent<Void> {
-//        let source = self.methodInvoked(#selector(Base.layoutSubviews .layoutSubviews(_:))).map { _ in }
-//        return ControlEvent(events: source)
-//    }
-//}
